@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+   <h2>Java script </h2> 
+   <p>Click the buttons for result</p>
+   <button onclick="ascending()">ascending oder</button>
+   <button onclick="descending()">descending oder</button>
+   <p id="result"></p>
+    <script>
+        var points = [40,25,5,78,100];
+        document.getElementById("result").innerHTML = points;
+        function ascending (){
+            points.sort(function(a,b){return a-b});
+          document.getElementById("result").innerHTML = points;
+        }
+        function descending (){
+            points.sort(function(a,b){return b-a });
+          document.getElementById("result").innerHTML = points;
+        }
+
+
+    </script>
+</body>
+</html>
